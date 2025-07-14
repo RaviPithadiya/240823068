@@ -24,5 +24,14 @@ if(number1>number2){
 
 }
 
+//3 check leap year
+let year = 2021;
+if(year % 4 == 0){
+    console.log("year is leap")
+}else{
+    console.log("year is not leap")
+}
+
+
 
 
