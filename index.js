@@ -41,6 +41,21 @@ for(let i = 1; i<=n; i++){
 console.log(`sum of first ${n} natural number is: ${sum}`)
 
 //5 factorial of a number
+let fa = 4;
+let result = 1;
+for(let i=1;i<=fa;i++){
+    result *=i;
+}
+console.log(result)
+
+//6 print multiplication table
+let num = 5;
+let rows = 10;
+for(let i = 1; i <= rows; i++){
+    console.log(num + "x" + i + "=" +(num*i))
+}
+
+//7 reverse a number
 
 
 
