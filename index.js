@@ -27,10 +27,21 @@ if(number1>number2){
 //3 check leap year
 let year = 2021;
 if(year % 4 == 0){
-    console.log("year is leap")
+    console.log(year+"year is leap")
 }else{
-    console.log("year is not leap")
+    console.log(`${year}+"year is not leap"`)
 }
+
+//4 sum of natural number
+let n = 10;
+let sum = 0;
+for(let i = 1; i<=n; i++){
+    sum +=i;
+}
+console.log(`sum of first ${n} natural number is: ${sum}`)
+
+//5 factorial of a number
+
 
 
 
