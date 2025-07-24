@@ -85,5 +85,85 @@ let num1=5023;
 let count=num1.toString().length;
 console.log("Digites", count)
 
+//11 sum of degits
+let number4 = 123; 
+let sum2 = 0;
 
+while (number4 > 0) {
+let lastdigit = number4 % 10;
+sum2+= lastdigit; 
+  number4 = Math.floor(number4 / 10);
+}
 
+console.log(`The sum of the digits is: ${sum2}`);
+
+//12 Check Armstrong Number
+const number5 = 153; 
+
+const numStr = String(number5);
+const numberOfDigits = numStr.length;
+let sumOfPowers = 0;
+
+for (let i = 0; i < numberOfDigits; i++) {
+    const digit = parseInt(numStr[i]);
+    sumOfPowers += digit ** numberOfDigits;
+}
+
+if (sumOfPowers === number5) {
+    console.log(`${number5} is an Armstrong number.`);
+} else {
+    console.log(`${number5} is not an Armstrong number.`);
+}
+
+//13Generate Fibonacci Series
+
+const num2 = 5; 
+
+let a = 0;
+let b = 1;
+
+if (n >= 1) {
+  console.log(a);
+}
+if (n >= 2) {
+  console.log(b);
+}
+
+for (let i = 2; i < num2; i++) {
+  let nextTerm = a + b;
+  console.log(nextTerm);
+  a = b;
+  b = nextTerm;
+}
+
+//14 Check Vowel or Consonant
+const char = 'a';
+
+const vowels = 'aeiou';
+const lowerChar = char.toLowerCase();
+
+if (vowels.includes(lowerChar)) {
+  console.log(`'${char}'vowel.`);
+// } else {
+//   console.log(`'${char}'consonant.`);
+}
+
+//15 :  Simple Calculator
+const num3 = 4;
+const num4 = 2;
+
+// Addition
+const sum5 = num3 + num4;
+console.log(`Sum: ${sum5}`);
+
+// Subtraction
+const difference = num3 - num4;
+console.log(`Difference: ${difference}`);
+
+// Multiplication
+const product = num3 * num4;
+console.log(`Product: ${product}`);
+
+// Division
+const quotient = num3 / num4;
+console.log(`Quotient: ${quotient}`);
