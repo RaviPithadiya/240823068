@@ -167,3 +167,4 @@ console.log(`Product: ${product}`);
 // Division
 const quotient = num3 / num4;
 console.log(`Quotient: ${quotient}`);
+
