@@ -168,3 +168,62 @@ console.log(`Product: ${product}`);
 const quotient = num3 / num4;
 console.log(`Quotient: ${quotient}`);
 
+//16 Find GCD
+function myFunction(a, b) {
+    let smaller = Math.min(a, b);
+    let hcf = 1;
+
+    for (let i = 1; i <= smaller; i++) {
+        if (a % i === 0 && b % i === 0) {
+            hcf = i;
+        }
+    }
+
+    return hcf;
+}
+const numm = 20;
+const numn = 28;
+console.log("GCD of the giving numbers(20,28) is:", 
+    myFunction(numm, numn));
+
+//17 check  perfect number
+function isPerfectNumber(num) {
+   
+    if (num <= 0) {
+      return false;
+    }
+    let sumOfDivisors = 0;
+    for (let i = 1; i < num; i++) {
+      if (num % i === 0) {
+        sumOfDivisors += i;
+      }
+    }
+   return sumOfDivisors === num;
+  }
+  console.log(`Is 28 a perfect number? ${isPerfectNumber(28)}`);  
+
+  //18 print all divisors
+  const numb=10;
+  let divisors1=[];
+  for(let i=1;i <= numb;i++){
+      if(numb%i===0){
+          divisors1.push(i);
+      }
+  }
+  console.log(divisors1.join(''));
+  
+  //19Number is positive , negative or zero
+  const number7 = -5;
+  if(number7 > 0){
+      console.log("positive");
+  }else if(number7 < 0){
+      console.log("negative");    
+  }else{
+      console.log("zero");
+  }
+
+  //20 Find Power
+  let x = 2;
+  let y = 3;
+  let result2 = x ** y;
+  console.log(result2);
