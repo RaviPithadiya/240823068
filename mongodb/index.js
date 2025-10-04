@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://ravipithadiya316_db_user:Ravi777@mca.2movm5y.mongodb.net/?retryWrites=true&w=majority&appName=MCA",{
-    useNewUrlParser:true,
-    useUnifiedTopology:true,
+mongoose.connect("mongodb+srv://ravipithadiya316_db_user:Ravi777@mca.2movm5y.mongodb.net/?retryWrites=true&w=majority&appName=MCA",
 });
 
 const studentSchema = new mongoose.Schema({
@@ -33,14 +31,14 @@ Student.find()
         console.error("Error retriving students:",error);
     });
 
-// const student = new Student({
-//     name:"Ravi Pithadiya",
-//     department:"Computer Science",
-//     startYear:2020,
-//     endYear:2024,
-//     enrollment:240823068,
-//     address:"Rajkot",
-// });
+const student = new Student({
+    name:"Ravi Pithadiya",
+    department:"Computer Science",
+    startYear:2020,
+    endYear:2024,
+    enrollment:240823068,
+    address:"Rajkot",
+});
 
 const student = new Student({
     name:"Uday Maru",
