@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://ravipithadiya316_db_user:Ravi777@mca.2movm5y.mongodb.net/?retryWrites=true&w=majority&appName=MCA",
-});
+mongoose.connect("mongodb+srv://ravipithadiya316_db_user:Ravi777@mca.2movm5y.mongodb.net/?retryWrites=true&w=majority&appName=MCA");
 
 const studentSchema = new mongoose.Schema({
     name:String,
